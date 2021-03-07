@@ -1,0 +1,119 @@
+/* css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Css Variables */
+:root{
+--navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* logo and image */
+#logo{
+margin: 10px 30px;
+padding: 10px;
+}
+#logo img{
+    height: 70px;
+    width: 70px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 413.6px;
+}
+#home::before{
+    content: "";
+    background: url('../img/img5.jpg')  no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+.h-primary{
+font-size: 3rem;
+color: black;
+padding: 12px;
+font-family: 'Baloo Paaji 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* list item style */
+.btn{
+    padding: 9px 25px;
+    border: 2px solid white;
+    background-color: rgb(221, 90, 90);
+    color: white;
+    margin: 17px 17px;
+font-size: 1.5rem;
+border-radius: 15px;
+cursor: pointer;
+}
+#services{
+    display: flex;
+    color: black;
+    margin: 34px;
+}
+#services .box{
+    display: flex;
+    border: 2px solid green;
+    flex-direction: column;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+.center{
+    text-align: center;
+}
