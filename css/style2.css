@@ -138,9 +138,6 @@ html{
 } 
 
 /* Clients Section */
-#client-section{ 
-    position: relative;
-}
 
 #clients{
     display: flex;
